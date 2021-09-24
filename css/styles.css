@@ -125,7 +125,6 @@ body {
 .site-contacts-list {
     display: flex;
     margin-left: auto;
-    align-items: center;
 }
 
 .site-contacts-item:not(:last-child) {
@@ -144,8 +143,9 @@ body {
     color: var(--accent-text-color);
 }
 
-.site-nav-item,
-.site-contacts-item {
+.site-nav-link,
+.site-link {
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -166,6 +166,7 @@ body {
     font-size: 44px;
     font-weight: 900;
     line-height: 1.36;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-text-color);
 }
@@ -349,10 +350,10 @@ body {
 
 .address {
     margin-top: 20px;
+    font-style: normal;
 }
 
 .site-contact {
-    font-style: normal;
     font-weight: 400;
 }
 
@@ -365,7 +366,5 @@ body {
 }
 
 .site-contact {
-    font-style: normal;
-    letter-spacing: 0.03;
     color: rgba(255, 255, 255, 0.6);
 }
